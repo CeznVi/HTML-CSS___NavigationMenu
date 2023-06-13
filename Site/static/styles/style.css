@@ -1,7 +1,7 @@
 html, body {
 	height: 15000px;
 	font-family: 'Courier New', Courier, monospace;
-
+	background-color: gray;
 }
 
 img {
@@ -20,72 +20,65 @@ header h5 {
 	padding: 15px;
 }
 
-.text-center{
-	text-align: center;
+.text-center {
+    text-align: center;
 }
-
 .navigation {
-	background-color: lightgray;
-	padding: 30px;
-	position: sticky;
-	top: 0px;
-	left: 0px;
-	font-weight: 900;
+    background-color: lightgray;
+    padding: 30px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    font-weight: 900;
 }
 
 .navigation ul {
-	
-}
 
+}
 .navigation ul li{
-	display: inline-block;
-	background-color: black;
-	padding: 15px, 25px;
-	border: 2px solid yellow;
-	border-radius: 35px 15px;
+    display: inline-block;
+	width: 130px;
+    background-color: black;
+    padding: 16px 25px;
+    border: 2px solid yellow;
+    border-radius: 35px 15px;
+    position: relative;
 }
 
 .navigation ul li a {
-	text-decoration: none;
-	color: yellow;
+    text-decoration: none;
+    color: yellow;
 }
 
 .navigation ul li:hover {
-	border: 2px solid black;
-	border-radius: 35px 15px;
-	color: yellow;
+    border: 2px solid black;
+    background-color: yellow;
 }
 
-.navigation ul li:hover a{
-	color: black;
+.navigation ul li:hover  a {
+    color: black;
 }
 
-.nestedlist{
-	display: none;
-	position: absolute;
-	top: 45px;
+.nested-list {
+    display: none;
+    position: absolute;
+    top: 50px;
+	right: 0px;
 }
 
-.navigation ul li:hover .nestedlist{
-	display: block;
-
-	padding: 15px, 25px;
-
-	border-radius: 35px 15px;
-
+.nested-list li {
+    display: block !important;
+	margin: 8px 0px;
 }
 
-.nestedlist li{
-	display: block !important;
-	margin-top: 10px;
-	border: none;
+.navigation ul li:hover .nested-list {
+    display: block;
 }
 
-.nestedlist li:last-child(){
-	margin-bottom: 10px;
+.navigation ul li:hover .nested-list li a{
+    color: yellow;
 }
 
-.nestedlist li a {
-	border: none;
-	color: yellow;
+.navigation ul li:hover .nested-list li:hover a{
+    color: black;
 }
